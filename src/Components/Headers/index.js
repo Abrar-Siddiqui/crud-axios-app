@@ -1,0 +1,31 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const Headers = () => {
+  return (
+    <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+            <div className="container">
+                <Link className="navbar-brand text-white fw-bold" to="/">Crud-App</Link>
+                <button className="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon bg-white shadow-lg rounded-pill"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <Link className="nav-link active text-white" aria-current="page" to="/">Home</Link>
+                        </li>                    
+                    </ul>
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <Link className="nav-link active text-white" aria-current="page" to="/register">Create Data</Link>
+                        </li>                    
+                    </ul>               
+                </div>
+            </div>
+        </nav>
+    </div>
+  )
+}
+
+export default Headers
